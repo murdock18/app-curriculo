@@ -5,9 +5,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Curriculo</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </head>
 
     <body>
+
+        <div class="container">
+            <div class="row">
+                <style>
+                    div.coluna-dados img.thumb {
+                        border-radius: 100px 20px 100px 100px;
+                        margin-top: 20px;
+                    }
+                    div.coluna-dados .titulo {
+                        color: #005b8c;
+                        margin-top: 10px;
+                        font-weight: 100;
+                        font-size: 15px;
+                        display: block;
+                    }
+                    div.coluna-dados .highlight {
+                        color: #000;
+                        text-transform: uppercase;
+                      /*border-left: 5px solid #000;
+                        border-top: 1px solid #000;
+                        border-radius: 12px 0px 0px 0px;*/
+                    }
+                    div.coluna-dados .data {
+                        font-size: 12px;
+                        display: block;
+                    }
+                </style>
+                <div class="col-md-2 coluna-dados">
+                    
+                    <img class="thumb" src="https://via.placeholder.com/150x150">
+
+                    <span class="titulo highlight">Dados Pessoais</span>
+                    <span class="titulo">Data de Nascimento</span>
+                    <span class="data">11/03/1993</span>
+                    <span class="titulo">Nacionalidade</span>
+                    <span class="data">Brasileiro</span>
+                    <span class="titulo">Endereço</span>
+                    <span class="data">Av. Brigadeiro Luis Antonio 1293.
+                    AP: 1A. São Paulo-SP</span>
+                    <span class="titulo">Contato</span>
+                    <span class="data">(91) 99160-8168</span>
+                    <span class="btn btn-sm btn-outline-dark"><img src=https://image.flaticon.com/icons/svg/2111/2111425.svg style="max-width: 20px"></span>
+                    <span class="btn btn-sm btn-info"><img src="https://image.flaticon.com/icons/svg/561/561188.svg" style="max-width: 25px"></span>
+                    <span class="btn btn-sm btn-primary"><img src=https://image.flaticon.com/icons/svg/1384/1384014.svg style="max-width: 20px"></span>
+                    
+                    
+                </div>
+
+                <div class="col-md-10">
+                    <div class="jumbotron">
+                    <h1 class="display-4">Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzg3LjIgMzg3LjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ny4yIDM4Ny4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTMwNC44LDEwLjg0bDAtMC4wNEMyOTcuOTI3LDMuODkxLDI4OC41ODUsMC4wMDQsMjc4Ljg0LDBIMTA4LjMyQzg4LjA2NywwLjA2Niw3MS42NjYsMTYuNDY3LDcxLjYsMzYuNzJ2MzEzLjcyDQoJCQljMC4wMDQsOS43NDUsMy44OTEsMTkuMDg3LDEwLjgsMjUuOTZjNi44NjMsNi44OTksMTYuMTg5LDEwLjc4NSwyNS45MiwxMC44aDE3MC41NmM5LjczMS0wLjAxNSwxOS4wNTctMy45MDEsMjUuOTItMTAuOA0KCQkJYzYuODk5LTYuODYzLDEwLjc4NS0xNi4xODksMTAuOC0yNS45MlYzNi43NkMzMTUuNTg1LDI3LjAyOSwzMTEuNjk5LDE3LjcwMywzMDQuOCwxMC44NHogTTE5My42LDM2Mi4yOEwxOTMuNiwzNjIuMjgNCgkJCWMtNS40NzksMC05LjkyLTQuNDQxLTkuOTItOS45MmMwLTUuNDc5LDQuNDQxLTkuOTIsOS45Mi05LjkyYzUuNDc5LDAsOS45Miw0LjQ0MSw5LjkyLDkuOTINCgkJCUMyMDMuNTIsMzU3LjgzOSwxOTkuMDc5LDM2Mi4yOCwxOTMuNiwzNjIuMjh6IE0yODYuNDQsMzAwYzAsMTMuMjU1LTEwLjc0NSwyNC0yNCwyNEgxMjQuNzJjLTEzLjI1NSwwLTI0LTEwLjc0NS0yNC0yNFY2Ni4yDQoJCQljMC0xMy4yNTUsMTAuNzQ1LTI0LDI0LTI0aDEzNy43NmMxMy4yNTUsMCwyNCwxMC43NDUsMjQsMjRMMjg2LjQ0LDMwMHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                        Learn more
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <div class="cabecalho" >
             <img src="https://www.alfanerd.com.br/wp-content/uploads/2019/09/darth-vader-pixel-art-2.jpg" alt="Foto do Curriculo">
@@ -78,5 +141,7 @@
                 
             </div>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>

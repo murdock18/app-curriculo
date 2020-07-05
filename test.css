@@ -1,0 +1,150 @@
+#content1{
+    background: #e0e5eb;
+    height: 190px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+#content2{
+    background: #abc7e9;
+    width: 960;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+#bloco1 {
+    background: #e7eef5;
+    width: 300px;
+    height: 440px;
+    display: flex;
+    flex-direction: column ;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.item2 {
+    flex: 0 1 auto;
+    
+    color: black;
+    
+    margin: 5px;
+}
+
+.item2:nth-child(1){
+    
+}
+
+.cabecalho img {
+    float: left;
+    border-radius: 100px 20px 100px 100px;
+    margin-top: 20px;
+}
+
+.titulo1 {
+    color: blue;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5rem;
+    line-height: 1;
+    margin: 0;
+    margin-top: 2.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.titulo2 {
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+  /*font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: .5rem;
+    margin: 0;*/
+}
+
+.titulo3 {
+    color: #005b8c;
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 15px;
+    display: block;
+  /*color: red;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: .5rem;
+    margin: 0;*/
+}
+
+.titulo4 {
+    font-size: 12px;
+    display: block;
+  /*font-weight: 60;
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: .5rem;
+    margin: 0;*/
+}
+
+.contatoItem{
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    position: relative;
+}
+
+.contatoItem img {
+    max-width: 25px;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+button{
+    padding: .3em 1em;
+    border-radius: 100px 20px 100px 100px;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 50%;
+    display: block;
+    clear: both;
+    margin: 5px 0px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-experiencia{
+    margin-top: 30px;
+}

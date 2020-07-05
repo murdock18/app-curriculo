@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+     <link rel="stylesheet" href="test.css">
+</head>
+
+<header>
+    <section id="content1">
+        <article class="item1">
+            <div class="cabecalho" id="" >
+                <img class="thumb" src="https://via.placeholder.com/150x150">
+            </div>
+        </article>
+        <article class="item1">
+            <div class="cabecalho">
+                <h1 class="titulo1">
+                    Paulo César dos Santos Sousa Júnior
+                </h1>
+            </div>
+        </article>
+    </section>
+</header>
+<body>
+
+<section id="content2"> 
+    
+    <section id="bloco1">
+        <article class="item2">
+            <div id="dados">
+                <div id="subTitulos">
+                <p class="titulo2">Dados Pessoais</p>
+            </div>
+            <div id="nascimento">
+                <p class="titulo3">Data de Nascimento</p>
+                <p class="titulo4">11/03/1993</p>
+            </div>
+            <div id="nacionalidade">
+                <p class="titulo3">Nacionalidade</p>
+                <p class="titulo4">Brasileiro</p>
+            </div>
+            <div id="endereço">
+                <p class="titulo3">Endereço</p>
+                <p class="titulo4">logo ali</p>
+            </div> 
+        </article>
+
+        <article class="item2">
+            <div id="subTitulos">
+                <p class="titulo2">Contato</p>
+                <div class="contatoItem">
+                    <div>
+                        <img src="https://image.flaticon.com/icons/svg/597/597177.svg" 
+                             alt="telefone">    (91) 99160-8168
+                    </div>
+                    <div>
+                        <img src="https://image.flaticon.com/icons/svg/2089/2089136.svg"
+                             alt="e-mail">  paulomurdock@gmail.com
+                    </div>
+                    <div>
+                    <img src="https://image.flaticon.com/icons/svg/25/25231.svg"
+                         alt="github">  https://github.com/murdock18
+                    </div>
+                    <div>
+                    <img src="https://image.flaticon.com/icons/svg/254/254394.svg"
+                         alt="e-mail">   https://www.linkedin.com/in/paulocesarssjr/
+                    </div>
+                </div>
+            </div>    
+    </article>
+    </section>
+    <section id="bloco2">
+        <article class="item3">
+            <div id="exp">
+                <div id="subTitulos">
+                <p class="titulo2">Experiências de Trabalho</p>
+            </div>
+            <section class="container">
+                <p class="titulo3" id="titulo-form">Adicionar Experiências</p>
+                <form id="form-adiciona">
+                    <div class="grupo">
+                        <input id="cargo" name="cargo" type="text" placeholder="Cargo" class="campo">
+                    </div>
+                    <button>Adicionar</button>
+            </section>
+        </article>
+    </section>
+    
+</section>
+
+    
+    <!--
+        Versão antiga que ainda irei otimizar ^^
+
+    <div class="exp">
+                    <div id="blocoPrincipal">
+                        <p class="titulo2" id="experienciasDeTrabalho">Experiências de Trabalho</p>
+                    </div>                   
+                                       
+                        <section class="container">
+                            <p class="titulo2" id="titulo-form">Adicionar Experiências</p>
+                            <form id="form-adiciona" onsubmit="javascript: void(0);">
+                                <div class="grupo">
+                                    <label for="cargo">Posição:</label>
+                                    <input id="cargo" name="cargo" type="text" placeholder="digite sua cargo" class="campo">
+                                </div>
+                                <div class="grupo">
+                                    <label for="empresa">Empresa:</label>
+                                    <input id="empresa" name="empresa" type="text" placeholder="digite a empresa" class="campo campo-medio">
+                                </div>
+                                <div class="grupo">
+                                    <label for="descricao">Descrição:</label>
+                                    <input id="descricao" name="descricao" type="text" placeholder="digite a descricao da sua função" class="campo campo-final">
+                                </div>
+                            
+                                <button id="adicionar-experiencia" class="botao bto-principal" onclick="oi()">Adicionar</button>
+                            </form>
+                        </section>
+                    </div>
+        </div>    
+    </div>
+
+    <div id="append-thix-shit-here" style="list-style-type: circle;">
+        <div>Posição - Empresa - Descrição</div>
+    </div>
+
+    <ul id="fuking-clone" style="display: none">
+        <div>-0-</div>
+    </ul>
+
+
+    <script src="script.js"></script>
+    <script>
+        function oi() {
+            //fuking-clone
+            //append-thix-shit-here
+            if ($("#cargo").val() !== "") {
+                $("#fuking-clone").find("div").clone().html($("#cargo").val() + " - " + $("#empresa").val() + " - " + $("#descricao").val()).appendTo("#append-thix-shit-here");
+            }
+        }
+    </script>-->
+</body>
+</html>
