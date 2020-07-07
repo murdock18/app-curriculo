@@ -1,7 +1,7 @@
-var botaoAdicionar = document.querySelector("#adicionar");
-var listElement = document.querySelector("#experiencias");
+const botaoAdicionar = document.querySelector("#adicionar");
+const listElement = document.querySelector("#experiencias");
 
-var listaExperiencia = JSON.parse(localStorage.getItem("lista_experiencia")) || [];
+const listaExperiencia = JSON.parse(localStorage.getItem("lista_experiencia")) || [];
 
 botaoAdicionar.addEventListener("click", () => {
     event.preventDefault();
@@ -29,17 +29,17 @@ function renderExp() {
     listElement.innerHTML = "";
 
     for (exp of listaExperiencia) {
-        var expElement = document.createElement("li");
+        const expElement = document.createElement("li");
         expElement.className= "experiencia"
-        var expCargoP = document.createElement("p")
+        const expCargoP = document.createElement("p")
         expCargoP.className = "titulo5"
-        var expEmpresaP = document.createElement("p")
+        const expEmpresaP = document.createElement("p")
         expEmpresaP.className = "titulo2"
-        var expDescricaoP = document.createElement("p")
+        const expDescricaoP = document.createElement("p")
         expDescricaoP.className = "titulo4"
-        var expCargo = document.createTextNode(exp.cargo);
-        var expEmpresa = document.createTextNode(exp.empresa);
-        var expDescricao = document.createTextNode(exp.descricao);
+        const expCargo = document.createTextNode(exp.cargo);
+        const expEmpresa = document.createTextNode(exp.empresa);
+        const expDescricao = document.createTextNode(exp.descricao);
 
         expCargoP.appendChild(expCargo);
         expEmpresaP.appendChild(expEmpresa);
@@ -56,9 +56,9 @@ function renderExp() {
 }
 
 function elementDeleteButton(exp) {
-    var pos = listaExperiencia.indexOf(exp);
+    const pos = listaExperiencia.indexOf(exp);
 
-    var linkElement = document.createElement("img");
+    const linkElement = document.createElement("img");
     linkElement.setAttribute("src", "https://image.flaticon.com/icons/svg/833/833520.svg#");
     linkElement.setAttribute("onclick", "deleteExp(" + pos + ")");
     linkElement.className="deleteButton";
