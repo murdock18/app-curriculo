@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Curriculo</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/experiencia-style.css">
-        <link rel="stylesheet" href="css/titulos.css">
-    </head>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/experiencia-style.css">
+    <link rel="stylesheet" href="css/titulos.css">
+</head>
+
+<main id="page">
     <header>
         <section id="cabecalho">
-            <article >
+            <article class="cabecalho-avatar">
                 <div>
                     <img class="thumb" src="https://via.placeholder.com/150x150">
                 </div>
             </article>
-            <article>
+            <article class="cabecalho-title">
                 <div>
                     <h1 class="titulo1">
                         Paulo César dos Santos Sousa Júnior
                     </h1>
+                    <span class="cabecalho-title-cargo">Desenvolder de Software</span>
                 </div>
             </article>
         </section>
     </header>
+
     <body>
 
         <section id="corpo">
@@ -47,70 +51,75 @@
                             <p class="titulo3">Endereço</p>
                             <p class="titulo4">logo ali</p>
                         </div>
-                    </article>
+                </article>
 
-                    <article class="item2">
-                        <div id="subTitulos">
-                            <p class="titulo2">Contato</p>
-                            <div class="contatoItem">
-                                <div>
-                                    <img src="https://image.flaticon.com/icons/svg/597/597177.svg" alt="telefone">
-                                    (91) 99160-8168
-                                </div>
-                                <div>
-                                    <img src="https://image.flaticon.com/icons/svg/2089/2089136.svg" alt="e-mail">
-                                    paulomurdock@gmail.com
-                                </div>
-                                <div>
-                                    <a href="https://github.com/murdock18" target="_blank">
-                                        <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github">
-                                        https://github.com/murdock18
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://www.linkedin.com/in/paulocesarssjr/" target="_blank">
-                                        <img src="https://image.flaticon.com/icons/svg/254/254394.svg" alt="e-mail">
-                                        https://www.linkedin.com/in/paulocesarssjr/
-                                    </a>
-                                </div>
+                <article class="contato-items">
+                    <div id="subTitulos">
+                        <p class="titulo2">Contato</p>
+                        <div class="contatoItem">
+                            <div>
+                                <img src="https://image.flaticon.com/icons/svg/597/597177.svg" alt="telefone">
+                                (91) 99160-8168
+                            </div>
+                            <div>
+                                <img src="https://image.flaticon.com/icons/svg/2089/2089136.svg" alt="e-mail">
+                                paulomurdock@gmail.com
+                            </div>
+                            <div>
+                                <a href="https://github.com/murdock18" target="_blank">
+                                    <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github">
+                                    https://github.com/murdock18
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/paulocesarssjr/" target="_blank">
+                                    <img src="https://image.flaticon.com/icons/svg/254/254394.svg" alt="e-mail">
+                                    https://www.linkedin.com/in/paulocesarssjr/
+                                </a>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                </section>
-                <section id="expTrabalho">
-                    <article class="item2">
-                        <div id="exp">
-                            <div id="subTitulos">
-                                <p class="titulo2">Experiências de Trabalho</p>
-                            </div>
-                        </article>
-                        <article class="item3">
-                            <div id="timeline">
-                                <ul id="experiencias"></ul>
-                            </div>
-                            <form id="form-adiciona">
-                                <div class="grupo">
-                                    <label for="cargo">Cargo</label>
-                                    <input id="cargo" name="cargo" type="text" placeholder="Digite o cargo" class="campo">
-                                </div>
-                                <div class="grupo">
-                                    <label for="empresa">Empresa</label>
-                                    <input id="empresa" name="empresa" type="text" placeholder="Digite o empresa na qual você trabalhou" class="campo campo-medio">
-                                </div>
-                                <div class="grupo">
-                                    <label for="descricao">Descrição</label>
-                                    <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Aqui você coloca a descrição das funções executadas no trabalho!" class="campo-final"></textarea>
-                                </div>
+            </section>
+            <section id="expTrabalho">
+                <article class="item2">
+                    <div id="exp">
+                        <div id="subTitulos">
+                            <p class="titulo2">Experiências de Trabalho</p>
+                        </div>
+                </article>
+                <article class="item3">
+                    <div id="timeline">
+                        <ul id="experiencias"></ul>
+                    </div>
+                    <form id="form-adiciona">
+                        <div class="grupo">
+                            <label for="cargo">Cargo</label>
+                            <input id="cargo" name="cargo" type="text" placeholder="Digite o cargo" class="campo">
+                        </div>
+                        <div class="grupo">
+                            <label for="empresa">Empresa</label>
+                            <input id="empresa" name="empresa" type="text"
+                                placeholder="Digite o empresa na qual você trabalhou" class="campo campo-medio">
+                        </div>
+                        <div class="grupo">
+                            <label for="descricao">Descrição</label>
+                            <textarea name="descricao" id="descricao" cols="30" rows="10"
+                                placeholder="Aqui você coloca a descrição das funções executadas no trabalho!"
+                                class="campo-final"></textarea>
+                        </div>
 
-                                <button id="adicionar" class="botao bto-principal">Adicionar</button>
-                            </form>
+                        <button id="adicionar" class="botao bto-principal">Adicionar</button>
+                    </form>
 
-                        </article>
+                </article>
 
-                    </section>
+            </section>
 
-                </section>
-                <script src="script.js"></script>
-            </body>
-        </html>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</main>
+
+</html>
