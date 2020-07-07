@@ -1,0 +1,138 @@
+body {
+    background: #e0e5eb;
+}
+
+#cabecalho{
+    height: 190px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+#corpo{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+#dadosPessoais {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column ;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    border-right: inset;
+    padding-right: 10px;
+}
+
+#expTrabalho {
+    padding: 0 10px 0 40px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#cabecalho img {
+    float: left;
+    border-radius: 100px 20px 100px 100px;
+    margin-top: 20px;
+}
+
+
+
+.contatoItem{
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    position: relative;
+}
+
+.contatoItem img {
+    max-width: 25px;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+button{
+    padding: .3em 1em;
+    border-radius: 100px 100px 100px 100px;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+    clear: both;
+    margin: 5px 0px;
+
+}
+
+button:hover{
+    transform: skew(-10deg);
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+/*COlOCANDO UMA FLEX BOX PARA FUTURAMENTE FAZER CLONE*/
+
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 250px;
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: .7em;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+.campo-final{
+    margin: 0;
+	padding-bottom: 1em;
+    width: 400px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+	padding: .7em;
+
+}
+
+.grupo{
+	width: 100%;
+	padding: 10px 0px;
+}
+
+textarea {
+    resize: none;
+}
+

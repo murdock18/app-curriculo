@@ -4,144 +4,113 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Curriculo</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/experiencia-style.css">
+        <link rel="stylesheet" href="css/titulos.css">
     </head>
 
+    <header>
+        <section id="cabecalho">
+            <article >
+                <div>
+                    <img class="thumb" src="https://via.placeholder.com/150x150">
+                </div>
+            </article>
+            <article>
+                <div>
+                    <h1 class="titulo1">
+                        Paulo César dos Santos Sousa Júnior
+                    </h1>
+                </div>
+            </article>
+        </section>
+    </header>
     <body>
 
-        <div class="container">
-            <div class="row">
-                <style>
-                    div.coluna-dados img.thumb {
-                        border-radius: 100px 20px 100px 100px;
-                        margin-top: 20px;
-                    }
-                    div.coluna-dados .titulo {
-                        color: #005b8c;
-                        margin-top: 10px;
-                        font-weight: 100;
-                        font-size: 15px;
-                        display: block;
-                    }
-                    div.coluna-dados .highlight {
-                        color: #000;
-                        text-transform: uppercase;
-                      /*border-left: 5px solid #000;
-                        border-top: 1px solid #000;
-                        border-radius: 12px 0px 0px 0px;*/
-                    }
-                    div.coluna-dados .data {
-                        font-size: 12px;
-                        display: block;
-                    }
-                </style>
-                <div class="col-md-2 coluna-dados">
-                    
-                    <img class="thumb" src="https://via.placeholder.com/150x150">
+        <section id="corpo">
 
-                    <span class="titulo highlight">Dados Pessoais</span>
-                    <span class="titulo">Data de Nascimento</span>
-                    <span class="data">11/03/1993</span>
-                    <span class="titulo">Nacionalidade</span>
-                    <span class="data">Brasileiro</span>
-                    <span class="titulo">Endereço</span>
-                    <span class="data">Av. Brigadeiro Luis Antonio 1293.
-                    AP: 1A. São Paulo-SP</span>
-                    <span class="titulo">Contato</span>
-                    <span class="data">(91) 99160-8168</span>
-                    <span class="btn btn-sm btn-outline-dark"><img src=https://image.flaticon.com/icons/svg/2111/2111425.svg style="max-width: 20px"></span>
-                    <span class="btn btn-sm btn-info"><img src="https://image.flaticon.com/icons/svg/561/561188.svg" style="max-width: 25px"></span>
-                    <span class="btn btn-sm btn-primary"><img src=https://image.flaticon.com/icons/svg/1384/1384014.svg style="max-width: 20px"></span>
-                    
-                    
-                </div>
+            <section id="dadosPessoais">
+                <article class="item2">
+                    <div id="dados">
+                        <div id="subTitulos">
+                            <p class="titulo2">Dados Pessoais</p>
+                        </div>
+                        <div id="nascimento">
+                            <p class="titulo3">Data de Nascimento</p>
+                            <p class="titulo4">11/03/1993</p>
+                        </div>
+                        <div id="nacionalidade">
+                            <p class="titulo3">Nacionalidade</p>
+                            <p class="titulo4">Brasileiro</p>
+                        </div>
+                        <div id="endereço">
+                            <p class="titulo3">Endereço</p>
+                            <p class="titulo4">logo ali</p>
+                        </div>
+                    </article>
 
-                <div class="col-md-10">
-                    <div class="jumbotron">
-                    <h1 class="display-4">Hello, world!</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">
-                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzg3LjIgMzg3LjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ny4yIDM4Ny4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTMwNC44LDEwLjg0bDAtMC4wNEMyOTcuOTI3LDMuODkxLDI4OC41ODUsMC4wMDQsMjc4Ljg0LDBIMTA4LjMyQzg4LjA2NywwLjA2Niw3MS42NjYsMTYuNDY3LDcxLjYsMzYuNzJ2MzEzLjcyDQoJCQljMC4wMDQsOS43NDUsMy44OTEsMTkuMDg3LDEwLjgsMjUuOTZjNi44NjMsNi44OTksMTYuMTg5LDEwLjc4NSwyNS45MiwxMC44aDE3MC41NmM5LjczMS0wLjAxNSwxOS4wNTctMy45MDEsMjUuOTItMTAuOA0KCQkJYzYuODk5LTYuODYzLDEwLjc4NS0xNi4xODksMTAuOC0yNS45MlYzNi43NkMzMTUuNTg1LDI3LjAyOSwzMTEuNjk5LDE3LjcwMywzMDQuOCwxMC44NHogTTE5My42LDM2Mi4yOEwxOTMuNiwzNjIuMjgNCgkJCWMtNS40NzksMC05LjkyLTQuNDQxLTkuOTItOS45MmMwLTUuNDc5LDQuNDQxLTkuOTIsOS45Mi05LjkyYzUuNDc5LDAsOS45Miw0LjQ0MSw5LjkyLDkuOTINCgkJCUMyMDMuNTIsMzU3LjgzOSwxOTkuMDc5LDM2Mi4yOCwxOTMuNiwzNjIuMjh6IE0yODYuNDQsMzAwYzAsMTMuMjU1LTEwLjc0NSwyNC0yNCwyNEgxMjQuNzJjLTEzLjI1NSwwLTI0LTEwLjc0NS0yNC0yNFY2Ni4yDQoJCQljMC0xMy4yNTUsMTAuNzQ1LTI0LDI0LTI0aDEzNy43NmMxMy4yNTUsMCwyNCwxMC43NDUsMjQsMjRMMjg2LjQ0LDMwMHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
-                        Learn more
-                    </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="cabecalho" >
-            <img src="https://www.alfanerd.com.br/wp-content/uploads/2019/09/darth-vader-pixel-art-2.jpg" alt="Foto do Curriculo">
-            <h1>Paulo César dos Santos Sousa Júnior</h1>
-        </div>
-        <div class="group">
-            <div id="dados">
-                <h2>Dados Pessoais</h2>
-                <table >
-                    <tr><th><h3>Data de Nascimento</h3></th></tr>
-                    <tr><td>11/03/1993</td></tr>             
-                </table>
-                <table>
-                    <tr><th><h3>Nacionalidade</h3></th></tr>
-                    <tr><td>Brasileiro</td></tr>             
-                </table>
-                <table>
-                    <tr><th><h3>Endereço</h3></th></tr>
-                    <tr><td>Av. Brigadeiro Luis Antonio 1293.<br>AP: 1A. São Paulo-SP</td></tr>             
-                </table>
-                <table class="contatos">
-                    <tr><th><h2>Contato</h2></th></tr>
-                    <tr>
-                        <td>
-                            <img src="https://image.flaticon.com/icons/svg/597/597177.svg" alt="telefone"> (91) 99160-8168
-                            <br><br>
-                            <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github">   https://github.com/murdock18 
-                            <br><br>
-                            <img src="https://image.flaticon.com/icons/svg/2089/2089136.svg" alt="e-mail">  paulomurdock@gmail.com
-                            <br><br>
-                            <img src="https://image.flaticon.com/icons/svg/254/254394.svg" alt="e-mail">https://www.linkedin.com/in/paulocesarssjr/
-                            <br><br>
-                        </td>
-                    </tr>             
-                </table>
-            </div>
-            <div id="exp">
-                <h2>EXPERIÊNCIA DE TRABALHO</h2>
-                <ul>
-                    <li><h3>Técnico de Informática</h3>
-                        <h4>RedeTv! Belém</h4>
-                        texto de teste!
-                    </li>
-                    <li><h3>Monitor de Programação e Animação de Jogos</h3>
-                        <h4>Super Geeks Belém</h4>
-                        texto de teste!
-                    </li>
-                    <li><h3>Estagio de Suporte TI</h3>
-                        <h4>Centro de Pericias Cientificas Renato Chávez</h4>
-                        texto de teste!
-                    </li>
-                </ul>
+                    <article class="item2">
+                        <div id="subTitulos">
+                            <p class="titulo2">Contato</p>
+                            <div class="contatoItem">
+                                <div>
+                                    <img src="https://image.flaticon.com/icons/svg/597/597177.svg" alt="telefone">
+                                    (91) 99160-8168
+                                </div>
+                                <div>
+                                    <img src="https://image.flaticon.com/icons/svg/2089/2089136.svg" alt="e-mail">
+                                    paulomurdock@gmail.com
+                                </div>
+                                <div>
+                                    <a href="https://github.com/murdock18" target="_blank">
+                                        <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github">
+                                        https://github.com/murdock18
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/paulocesarssjr/" target="_blank">
+                                        <img src="https://image.flaticon.com/icons/svg/254/254394.svg" alt="e-mail">
+                                        https://www.linkedin.com/in/paulocesarssjr/
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-                <h2>Formação</h2>
+                </section>
+                <section id="expTrabalho">
+                    <article class="item2">
+                        <div id="exp">
+                            <div id="subTitulos">
+                                <p class="titulo2">Experiências de Trabalho</p>
+                            </div>
+                        </article>
+                        <article class="item3">
+                            <div id="timeline">
+                                <ul id="experiencias"></ul>
+                            </div>
+                            <form id="form-adiciona">
+                                <div class="grupo">
+                                    <label for="cargo">Cargo</label>
+                                    <input id="cargo" name="cargo" type="text" placeholder="Digite o cargo" class="campo">
+                                </div>
+                                <div class="grupo">
+                                    <label for="empresa">Empresa</label>
+                                    <input id="empresa" name="empresa" type="text" placeholder="Digite o empresa na qual você trabalhou" class="campo campo-medio">
+                                </div>
+                                <div class="grupo">
+                                    <label for="descricao">Descrição</label>
+                                    <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Aqui você coloca a descrição das funções executadas no trabalho!" class="campo-final"></textarea>
+                                </div>
 
-                <ul>
-                    <li><h3>Jogos Digitais</h3>
-                        Universidade Estácio de Sá
-                    </li>
-                </ul>
+                                <button id="adicionar" class="botao bto-principal">Adicionar</button>
+                            </form>
 
-                <h2>Skill's</h2>
-                <ul>
-                    <li>
-                        varias skills
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
+                        </article>
 
-        <script src="script.js"></script>
-    </body>
-</html>
+                    </section>
+
+                </section>
+                <script src="script.js"></script>
+            </body>
+        </html>
