@@ -1,11 +1,7 @@
 var botaoAdicionar = document.querySelector("#adicionar");
 var listElement = document.querySelector("#experiencias");
 
-var listaExperiencia = JSON.parse(localStorage.getItem("lista_experiencia")) || [{
-    cargo: "alguma coisa",
-    empresa: "outra coisa",
-    descricao: "mais outra coisa"
-}];
+var listaExperiencia = JSON.parse(localStorage.getItem("lista_experiencia")) || [];
 
 botaoAdicionar.addEventListener("click", () => {
     event.preventDefault();
